@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kavya Parekh — Software Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <span class="nav-logo">KP</span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <canvas id="particles"></canvas>
+    </div>
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Kavya<br /><span class="hero-name-accent">Parekh</span></h1>
+      <p class="hero-title">
+        <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
+      </p>
+      <p class="hero-sub">MS Computer Software Engineering @ Arizona State University · GPA 4.0</p>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://linkedin.com/in/kavya-parekh" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://github.com/kavyaparekh" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+        <a href="mailto:kparekh5@asu.edu" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="section-label">About Me</p>
+          <h2 class="section-title">Building intelligent systems,<br/> one commit at a time.</h2>
+          <p class="about-desc">
+            I'm a software engineer pursuing my Master's in Computer Software Engineering at Arizona State University with a 4.0 GPA. With a background spanning AI, full-stack development, and cloud infrastructure, I love turning complex problems into elegant, scalable solutions.
+          </p>
+          <p class="about-desc">
+            From training sign language recognition models that support accessibility, to architecting real-time financial platforms processing 2000+ transactions/min — I build things that matter. Currently focused on AI/ML systems, distributed architectures, and developer tooling.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <span class="highlight-num">4.0</span>
+              <span class="highlight-label">GPA at ASU</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-num">4+</span>
+              <span class="highlight-label">Industry Internships</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-num">GHC</span>
+              <span class="highlight-label">2025 Scholar</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual reveal reveal-right">
+          <div class="about-card">
+            <div class="about-card-inner">
+              <div class="status-dot"></div>
+              <span class="status-text">Open to opportunities</span>
+              <div class="about-card-tags">
+                <span class="tag">AI/ML</span>
+                <span class="tag">Full-Stack</span>
+                <span class="tag">Cloud</span>
+                <span class="tag">DevOps</span>
+                <span class="tag">Research</span>
+              </div>
+              <div class="about-card-edu">
+                <div class="edu-row">
+                  <div class="edu-icon">🎓</div>
+                  <div>
+                    <strong>MS Software Engineering</strong>
+                    <p>Arizona State University · 2024–2026</p>
+                  </div>
+                </div>
+                <div class="edu-row">
+                  <div class="edu-icon">🎓</div>
+                  <div>
+                    <strong>B.Tech Computer Science</strong>
+                    <p>NIT Surat · 2020–2024</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="section section-dark" id="experience">
+    <div class="container">
+      <p class="section-label reveal">Experience</p>
+      <h2 class="section-title reveal">Where I've Worked</h2>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">AI Software Engineering Intern</h3>
+                <p class="timeline-company">Cyber's Secrets</p>
+              </div>
+              <span class="timeline-date">Sep 2025 – Dec 2025</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Built a Chrome extension (TypeScript + Manifest V3) scanning Gmail DOM and routing email data to a backend Gemini LLM, detecting 5+ phishing patterns in real time</li>
+              <li>Engineered a privacy-first backend on Google Cloud Run — Node.js API routing + FastAPI ML inference + C++ email parsing — achieving &lt;800ms analysis latency with zero data storage</li>
+              <li>Integrated a Gemini-powered reply generator that auto-drafts safe responses, cutting phishing review time by 60%</li>
+            </ul>
+            <div class="timeline-stack">
+              <span>TypeScript</span><span>Node.js</span><span>FastAPI</span><span>Gemini API</span><span>C++</span><span>Google Cloud Run</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Software Developer Intern</h3>
+                <p class="timeline-company">Al-Ghurair Investments</p>
+              </div>
+              <span class="timeline-date">Feb 2024 – Jun 2024</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Built 15+ responsive e-commerce pages with React.js, Node.js, CSS reducing load speed by 30%</li>
+              <li>Cut dashboard deployment time by 30% using Builder.io with embedded secure CI/CD checks</li>
+              <li>Migrated 30+ legacy web modules to HCL DX, creating reusable components reducing load time by 25%</li>
+              <li>Built RESTful APIs and 40+ unit tests in an Agile team, reducing post-release defects by 15%</li>
+            </ul>
+            <div class="timeline-stack">
+              <span>React.js</span><span>Node.js</span><span>JavaScript</span><span>HCL DX</span><span>Builder.io</span><span>CI/CD</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Summer Analyst / SDE Intern</h3>
+                <p class="timeline-company">Northern Trust</p>
+              </div>
+              <span class="timeline-date">May 2023 – Aug 2023</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Led development of an end-to-end real-time FX rate ingestion platform (Java/Spring Boot + Kafka + Oracle SQL Cloud), processing 2000+ transactions/min</li>
+              <li>Implemented Kafka Pub/Sub to decouple market data producers from consumers, streaming ~120 FX rate events/hour at low latency</li>
+              <li>Built a Mendix dashboard for 300+ users, backed by optimized Spring Boot APIs</li>
+            </ul>
+            <div class="timeline-stack">
+              <span>Java</span><span>Spring Boot</span><span>Kafka</span><span>Oracle SQL</span><span>Mendix</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Research Assistant</h3>
+                <p class="timeline-company">National Institute of Technology, Surat</p>
+              </div>
+              <span class="timeline-date">Jan 2022 – Apr 2023</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Conducted research under Prof. Dipti Rana in computer vision & assistive tech — work adopted by 15+ PhD researchers as a baseline</li>
+              <li>Trained a Sign Language → Text Translator using MediaPipe & FNNs on 200+ gestures; achieved 88% accuracy, directly supporting hearing/speech-impaired users</li>
+              <li>Built a dynamic gesture recognition pipeline with TensorFlow Data APIs, reducing retraining time for new gestures by 40%</li>
+            </ul>
+            <div class="timeline-stack">
+              <span>Python</span><span>TensorFlow</span><span>MediaPipe</span><span>Computer Vision</span><span>FNNs</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section" id="projects">
+    <div class="container">
+      <p class="section-label reveal">Projects</p>
+      <h2 class="section-title reveal">Things I've Built</h2>
+      <div class="projects-grid">
+
+        <div class="project-card featured reveal">
+          <div class="project-card-top">
+            <div class="project-icon">👗</div>
+            <div class="project-links">
+              <a href="https://github.com/kavyaparekh/ChiqIQ" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <span class="project-featured-badge">Featured</span>
+          <h3 class="project-title">ChiqIQ</h3>
+          <p class="project-tagline">LLM-Based Personal Fashion Stylist</p>
+          <p class="project-desc">Conversational AI chatbot using Meta LLaMA 3.3 & Gemini 2.0 with a custom RAG pipeline on user-uploaded PDFs — delivers context-aware outfit recommendations. Deployed on Streamlit Community Cloud via VEXT, cutting styling decision time by 40%.</p>
+          <div class="project-stack">
+            <span>LLaMA 3.3</span><span>Gemini 2.0</span><span>RAG</span><span>Streamlit</span><span>VEXT</span><span>Python</span>
+          </div>
+        </div>
+
+        <div class="project-card featured reveal">
+          <div class="project-card-top">
+            <div class="project-icon">⚙️</div>
+            <div class="project-links">
+              <a href="https://github.com/kavyaparekh/kubedeploy" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <span class="project-featured-badge">Featured</span>
+          <h3 class="project-title">KubeDeploy</h3>
+          <p class="project-tagline">Git-to-Kubernetes CI/CD Deployment Platform</p>
+          <p class="project-desc">One API call to build, push, and deploy any repo to Kubernetes using Kaniko. An event-driven deployment controller watches build states and auto-provisions Deployments and Services — collapsing a 6-step containerization workflow and reducing manual effort by 95%.</p>
+          <div class="project-stack">
+            <span>Kubernetes</span><span>Kaniko</span><span>Docker</span><span>CI/CD</span><span>REST API</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card-top">
+            <div class="project-icon">🧠</div>
+            <div class="project-links">
+              <a href="https://github.com/kavyaparekh/QueryMind" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">QueryMind</h3>
+          <p class="project-tagline">Natural Language → SQL Agent</p>
+          <p class="project-desc">Natural-language-to-SQL agent with semantic schema retrieval, safety guardrails, and a self-correction loop — letting non-technical users query databases conversationally without writing a single line of SQL.</p>
+          <div class="project-stack">
+            <span>Python</span><span>LLM</span><span>SQL</span><span>Semantic Search</span><span>Agents</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card-top">
+            <div class="project-icon">🌍</div>
+            <div class="project-links">
+              <a href="https://github.com/kavyaparekh/environmental-impact-explorer" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Environmental Impact Explorer</h3>
+          <p class="project-tagline">AI-Powered Data Dashboard</p>
+          <p class="project-desc">Interactive environmental & economic impact dashboard powered by Google Data Commons and Claude AI — enabling data-driven exploration of real-world sustainability metrics through natural language queries.</p>
+          <div class="project-stack">
+            <span>Claude AI</span><span>Google Data Commons</span><span>JavaScript</span><span>Data Viz</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card-top">
+            <div class="project-icon">🛡️</div>
+            <div class="project-links">
+              <a href="https://github.com/kavyaparekh" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">PhishGuard Chrome Extension</h3>
+          <p class="project-tagline">Real-time Phishing Detection · Cyber's Secrets</p>
+          <p class="project-desc">Chrome extension scanning Gmail DOM threads using Gemini LLM classification to detect 5+ social-engineering phishing patterns with &lt;800ms latency — privacy-first, zero email data stored.</p>
+          <div class="project-stack">
+            <span>TypeScript</span><span>Manifest V3</span><span>Gemini API</span><span>FastAPI</span><span>Cloud Run</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card-top">
+            <div class="project-icon">🤟</div>
+            <div class="project-links">
+              <a href="https://github.com/kavyaparekh" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Sign Language Translator</h3>
+          <p class="project-tagline">Accessibility · Computer Vision Research @ NIT Surat</p>
+          <p class="project-desc">Sign Language → Text Translator using MediaPipe & FNNs on a self-curated dataset of 200+ gestures. Achieved 88% accuracy, directly supporting hearing/speech-impaired users. Adopted by 15+ PhD researchers as a baseline.</p>
+          <div class="project-stack">
+            <span>Python</span><span>MediaPipe</span><span>TensorFlow</span><span>FNN</span><span>Computer Vision</span>
+          </div>
+        </div>
+
+      </div>
+      <div class="projects-cta reveal">
+        <a href="https://github.com/kavyaparekh" target="_blank" rel="noopener" class="btn btn-outline">View All on GitHub →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section section-dark" id="skills">
+    <div class="container">
+      <p class="section-label reveal">Skills</p>
+      <h2 class="section-title reveal">My Toolkit</h2>
+      <div class="skills-grid">
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">💻</span>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-tags">
+            <span>Python</span><span>Java</span><span>C++</span><span>C</span>
+            <span>TypeScript</span><span>JavaScript</span><span>HTML</span>
+            <span>CSS</span><span>Bash</span><span>Prolog</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">⚛️</span>
+            <h3>Frameworks & Libraries</h3>
+          </div>
+          <div class="skill-tags">
+            <span>React.js</span><span>Node.js</span><span>Spring Boot</span>
+            <span>FastAPI</span><span>TensorFlow</span><span>Pandas</span>
+            <span>NumPy</span><span>Scikit-Learn</span><span>Matplotlib</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🗄️</span>
+            <h3>Databases</h3>
+          </div>
+          <div class="skill-tags">
+            <span>PostgreSQL</span><span>MySQL</span><span>Oracle SQL</span>
+            <span>MongoDB</span><span>Redis</span><span>RDBMS</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">☁️</span>
+            <h3>Cloud & DevOps</h3>
+          </div>
+          <div class="skill-tags">
+            <span>AWS (EC2, S3, Lambda)</span><span>Google Cloud Run</span>
+            <span>Docker</span><span>Kubernetes</span><span>Kafka</span>
+            <span>Git</span><span>CI/CD</span><span>Azure DevOps</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🤖</span>
+            <h3>AI / ML</h3>
+          </div>
+          <div class="skill-tags">
+            <span>LLM Fine-tuning</span><span>RAG Pipelines</span><span>Gemini API</span>
+            <span>OpenAI APIs</span><span>MediaPipe</span><span>Computer Vision</span>
+            <span>NLP</span><span>Reinforcement Learning</span><span>Prompt Engineering</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🛠️</span>
+            <h3>Tools & Testing</h3>
+          </div>
+          <div class="skill-tags">
+            <span>Postman</span><span>Figma</span><span>Jira</span>
+            <span>JUnit</span><span>VSCode</span><span>Agile/Scrum</span>
+            <span>Microservices</span><span>REST API Design</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Organizations -->
+  <section class="section" id="organizations">
+    <div class="container">
+      <p class="section-label reveal">Community</p>
+      <h2 class="section-title reveal">Beyond the Code</h2>
+      <div class="orgs-grid">
+
+        <div class="org-card reveal">
+          <div class="org-icon">🎤</div>
+          <div class="org-content">
+            <h3>Grace Hopper Celebration 2025</h3>
+            <p class="org-role">Scholar</p>
+            <p class="org-desc">Led interactive networking sessions fostering meaningful conversations among women technologists at the world's largest gathering of women in computing.</p>
+          </div>
+        </div>
+
+        <div class="org-card reveal">
+          <div class="org-icon">⚡</div>
+          <div class="org-content">
+            <h3>Society of Women Engineers (SWE)</h3>
+            <p class="org-role">Active Member · ASU Chapter</p>
+            <p class="org-desc">Led professional development and technical interview workshops for 50+ participants. Coordinated a diversity & inclusion panel featuring women industry leaders.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section-dark" id="contact">
+    <div class="container">
+      <div class="contact-center reveal">
+        <p class="section-label">Contact</p>
+        <h2 class="section-title">Let's Build Something Together</h2>
+        <p class="contact-desc">I'm currently open to full-time SWE / MLE roles starting Summer 2026. Whether it's a collaboration, opportunity, or just a hello — my inbox is open.</p>
+        <div class="contact-links">
+          <a href="mailto:kparekh5@asu.edu" class="btn btn-primary">Say Hello 👋</a>
+          <a href="https://linkedin.com/in/kavya-parekh" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
+          <a href="https://github.com/kavyaparekh" target="_blank" rel="noopener" class="btn btn-outline">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>Designed & built by Kavya Parekh · 2026</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
